@@ -25,8 +25,8 @@ module.exports = async function (context, myTimer) {
 
     // The whole response has been received. Print out the result.
     resp.on('end', () => {
-        x = (JSON.parse(data).value);
-        context.log(x);
+        message = (JSON.parse(data).value);
+        context.log(message);
          if (myTimer.IsPastDue)
     {
         context.log('JavaScript is running late!');
