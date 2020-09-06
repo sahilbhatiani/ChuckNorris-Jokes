@@ -1,8 +1,8 @@
 module.exports = async function (context, myTimer) {
     
 
-    const accountSid ="AC0b5a73ac23f11444b71d3a5f583e49c8"
-    const authToken ="78335ee9d677caea7037437b9653529a"
+    const accountSid =""
+    const authToken =""
 
     const client = require('twilio')(accountSid, authToken)
 
@@ -32,7 +32,7 @@ module.exports = async function (context, myTimer) {
         context.log('JavaScript is running late!');
     }
     client.messages.create({
-        to:"+64212603729",
+        to:"",
         from:'+12674607418',
         body:message
     })  
